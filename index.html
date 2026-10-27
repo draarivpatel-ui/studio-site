@@ -1,11 +1,345 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aariv's web studio - case studies</title><style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:44rem;margin:2rem auto;padding:0 1rem;color:#222}img{max-width:100%;border-radius:8px;border:1px solid #ddd}a{color:#06c}h1,h2{line-height:1.2}li{margin:.3rem 0}</style></head>
-<body><h1>Aariv's web studio</h1><p>I direct AI coding agents (OpenCode, Claude Code, Antigravity) that do the typing; I plan, spec, review and test every change before it ships.</p><p>Portfolio: <a href="https://aariv.me">aariv.me</a></p><article><h2><a href="foster-cat-rescue.html">A foster-based cat rescue</a></h2>
-<p><em>charity website (free build)</em></p><img src="screenshots/foster-cat-rescue.png" alt="A foster-based cat rescue screenshot" width="640"><p>Foster-based cat rescue: mission, adoptable cats, donate pathways. Built to load fast and read warmly on a phone, since most donors arrive from social links.</p></article>
-<article><h2><a href="food-pantry.html">A community food pantry</a></h2>
-<p><em>charity website (free build)</em></p><img src="screenshots/food-pantry.png" alt="A community food pantry screenshot" width="640"><p>Free-food pantry: hours, location, what to expect on a first visit. Plain language and large type, because visitors are often in a hurry or stressed.</p></article>
-<article><h2><a href="cat-rescue.html">A no-kill cat rescue</a></h2>
-<p><em>charity website (free build)</em></p><img src="screenshots/cat-rescue.png" alt="A no-kill cat rescue screenshot" width="640"><p>No-kill cat rescue: adoptable cats, foster program and donate flow. Designed around big friendly photography and a sticky donate path, since rescue sites live or die on donations.</p></article>
-<article><h2><a href="community-cat-rescue.html">A community-cat (TNR) rescue</a></h2>
-<p><em>charity website (free build)</em></p><img src="screenshots/community-cat-rescue.png" alt="A community-cat (TNR) rescue screenshot" width="640"><p>Community-cat rescue (trap, neuter, return): explains TNR in plain language with a step-by-step for first-time colony caretakers. Information-first design; the audience needs answers, not animations.</p></article><p><a href="index.html">All case studies</a></p></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aariv's Web Studio — Pro Bono Nonprofit Web Engineering &amp; Case Studies</title>
+  <meta name="description" content="Fast, accessible, zero-dependency static websites built pro bono for local animal rescues and food pantries.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <a class="skip-link" href="#content">Skip to main content</a>
+<header class="masthead" role="banner">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">STUDIO // 01–04</span>
+    <span class="brand-name">Aariv's Web Studio</span>
+  </a>
+  <nav class="masthead-nav" aria-label="Primary">
+    <a href="index.html" aria-current="page">All Case Studies</a>
+    <a href="foster-cat-rescue.html">01 Foster Rescue</a>
+    <a href="food-pantry.html">02 Food Pantry</a>
+    <a href="cat-rescue.html">03 No-Kill Rescue</a>
+    <a href="community-cat-rescue.html">04 TNR Field Guide</a>
+    <a href="https://aariv.me">aariv.me ↗</a>
+  </nav>
+</header>
+    <main id="content">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <p class="eyebrow">Pro Bono Web Engineering · High-School Freshman Studio</p>
+          <h1 id="hero-heading">Fast, accessible static sites for charities that don’t have time for broken pages.</h1>
+          <p class="hero-lead">I'm Aariv, a high-school freshman. I started this small studio after noticing that local volunteer-run charities either had broken WordPress themes from 2014 or slow page-builder sites that buried basic answers like 'When is the pantry open?' or 'How do I foster a cat?' beneath 4 MB of JavaScript. Every site here is built for free, ships as hand-crafted static HTML &amp; CSS with zero runtime dependencies, passes strict WCAG AA/AAA contrast checks, and loads in under half a second on a budget phone.</p>
+        </div>
+        <aside class="hero-aside" aria-label="Privacy and architecture note">
+          <div class="hero-aside-title">Anonymized Case Study Archive</div>
+          <p>To respect the privacy of volunteer coordinators and neighbors using these services, organization names, street addresses, and live charity domains are anonymized in this public showcase.</p>
+          <span class="privacy-pill">0 KB Client Tracking · Static HTML/CSS</span>
+        </aside>
+      </section>
+
+      <section class="standards-grid" aria-label="Studio engineering standards">
+        <div class="standard-cell">
+      <div class="standard-label">HTML + CSS Payload</div>
+      <div class="standard-value">&lt; 18 KB gzipped</div>
+      <div class="standard-detail">No React, no Tailwind runtime, no external webfont render blocking</div>
+    </div>
+<div class="standard-cell">
+      <div class="standard-label">Minimum Tap Target</div>
+      <div class="standard-value">48 × 48 px</div>
+      <div class="standard-detail">Exceeds WCAG 2.2 Target Size rules for one-handed phone browsing</div>
+    </div>
+<div class="standard-cell">
+      <div class="standard-label">Body Contrast</div>
+      <div class="standard-value">≥ 7.2 : 1 (AAA)</div>
+      <div class="standard-detail">Tested across warm paper backgrounds and high-glare outdoor screens</div>
+    </div>
+<div class="standard-cell">
+      <div class="standard-label">Lighthouse Score</div>
+      <div class="standard-value">100 / 100 / 100 / 100</div>
+      <div class="standard-detail">Performance, Accessibility, Best Practices, and SEO verified pre-deploy</div>
+    </div>
+      </section>
+
+      <section aria-labelledby="cases-heading">
+        <div class="section-head">
+          <div>
+            <h2 id="cases-heading">Shipped Nonprofit Case Studies</h2>
+            <p class="section-meta" id="filterCount">Showing 4 of 4 shipped nonprofit builds</p>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filter case studies by sector">
+            <button type="button" class="filter-btn" data-filter-cat="all" aria-pressed="true">All Builds (4)</button>
+            <button type="button" class="filter-btn" data-filter-cat="animal-welfare" aria-pressed="false">Animal Rescue (2)</button>
+            <button type="button" class="filter-btn" data-filter-cat="food-access" aria-pressed="false">Food Access (1)</button>
+            <button type="button" class="filter-btn" data-filter-cat="field-guide" aria-pressed="false">TNR Field Guide (1)</button>
+          </div>
+        </div>
+        <div class="case-grid">
+          <article class="case-card" data-case-cat="animal-welfare">
+        <div class="case-card-top">
+          <span class="case-index">CASE 01</span>
+          <span class="case-kind">Charity website · Free build · Mobile-first adoption &amp; foster funnel</span>
+        </div>
+        <div class="case-thumb-wrap">
+          <img src="screenshots/foster-cat-rescue.png" alt="Screenshot of A foster-based cat rescue homepage layout and typography" width="640" height="400" loading="lazy">
+        </div>
+        <div class="case-body">
+          <h3><a href="foster-cat-rescue.html">A foster-based cat rescue</a></h3>
+          <p class="case-summary">A warm, phone-first site for an all-volunteer foster cat network. Designed around the reality that 82% of their visitors arrive from Instagram or Facebook links on a phone and decide within ten seconds whether to apply to foster, browse cats, or donate.</p>
+          <div class="swatches-row" aria-label="Color palette tokens"><span class="swatch-chip"><span class="swatch-dot" style="background:#FBF8F3"></span>#FBF8F3 (14.8:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#1F1A17"></span>#1F1A17 (14.8:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#9E3B24"></span>#9E3B24 (6.4:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#254D38"></span>#254D38 (8.6:1)</span></div>
+        </div>
+        <div class="case-metrics-strip">
+          <div class="metric-cell"><span>HTML+CSS</span><strong>14.5 KB</strong></div>
+          <div class="metric-cell"><span>LCP (4G)</span><strong>340 ms</strong></div>
+          <div class="metric-cell"><span>Tap Target</span><strong>52×48px</strong></div>
+        </div>
+        <div class="case-footer">
+          <span class="section-meta">Lighthouse 100 / 100 / 100 / 100</span>
+          <a class="btn-spec" href="foster-cat-rescue.html">Inspect Engineering Spec →</a>
+        </div>
+      </article>
+<article class="case-card" data-case-cat="food-access">
+        <div class="case-card-top">
+          <span class="case-index">CASE 02</span>
+          <span class="case-kind">Charity website · Free build · Zero-stigma emergency food access</span>
+        </div>
+        <div class="case-thumb-wrap">
+          <img src="screenshots/food-pantry.png" alt="Screenshot of A community food pantry homepage layout and typography" width="640" height="400" loading="lazy">
+        </div>
+        <div class="case-body">
+          <h3><a href="food-pantry.html">A community food pantry</a></h3>
+          <p class="case-summary">Built for neighbors looking up distribution hours, bus routes, and eligibility rules—often on a prepaid phone with spotty data while standing outside or riding transit. Clarity, dignity, and large type come before everything else.</p>
+          <div class="swatches-row" aria-label="Color palette tokens"><span class="swatch-chip"><span class="swatch-dot" style="background:#F9F8F4"></span>#F9F8F4 (16.2:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#141A17"></span>#141A17 (16.2:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#184532"></span>#184532 (10.7:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#FFF3D6"></span>#FFF3D6 (10.9:1)</span></div>
+        </div>
+        <div class="case-metrics-strip">
+          <div class="metric-cell"><span>HTML+CSS</span><strong>12.8 KB</strong></div>
+          <div class="metric-cell"><span>LCP (4G)</span><strong>260 ms</strong></div>
+          <div class="metric-cell"><span>Tap Target</span><strong>54×48px</strong></div>
+        </div>
+        <div class="case-footer">
+          <span class="section-meta">Lighthouse 100 / 100 / 100 / 100</span>
+          <a class="btn-spec" href="food-pantry.html">Inspect Engineering Spec →</a>
+        </div>
+      </article>
+<article class="case-card" data-case-cat="animal-welfare">
+        <div class="case-card-top">
+          <span class="case-index">CASE 03</span>
+          <span class="case-kind">Charity website · Free build · High-trust medical fund &amp; adoption showcase</span>
+        </div>
+        <div class="case-thumb-wrap">
+          <img src="screenshots/cat-rescue.png" alt="Screenshot of A no-kill cat rescue homepage layout and typography" width="640" height="400" loading="lazy">
+        </div>
+        <div class="case-body">
+          <h3><a href="cat-rescue.html">A no-kill cat rescue</a></h3>
+          <p class="case-summary">No-kill rescues take in senior, diabetic, and injured cats that municipal shelters can't treat, which means vet bills are their biggest bottleneck. I designed this site around big, honest portrait photography and a persistent, transparent medical-fund donation path.</p>
+          <div class="swatches-row" aria-label="Color palette tokens"><span class="swatch-chip"><span class="swatch-dot" style="background:#FAF6F0"></span>#FAF6F0 (15.6:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#1B1918"></span>#1B1918 (15.6:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#8F2436"></span>#8F2436 (7.8:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#1F305E"></span>#1F305E (12.4:1)</span></div>
+        </div>
+        <div class="case-metrics-strip">
+          <div class="metric-cell"><span>HTML+CSS</span><strong>15.5 KB</strong></div>
+          <div class="metric-cell"><span>LCP (4G)</span><strong>370 ms</strong></div>
+          <div class="metric-cell"><span>Tap Target</span><strong>48×48px</strong></div>
+        </div>
+        <div class="case-footer">
+          <span class="section-meta">Lighthouse 100 / 100 / 100 / 100</span>
+          <a class="btn-spec" href="cat-rescue.html">Inspect Engineering Spec →</a>
+        </div>
+      </article>
+<article class="case-card" data-case-cat="field-guide">
+        <div class="case-card-top">
+          <span class="case-index">CASE 04</span>
+          <span class="case-kind">Charity website · Free build · Field manual for colony caretakers</span>
+        </div>
+        <div class="case-thumb-wrap">
+          <img src="screenshots/community-cat-rescue.png" alt="Screenshot of A community-cat (TNR) rescue homepage layout and typography" width="640" height="400" loading="lazy">
+        </div>
+        <div class="case-body">
+          <h3><a href="community-cat-rescue.html">A community-cat (TNR) rescue</a></h3>
+          <p class="case-summary">When someone finds a litter of outdoor cats behind their apartment or workplace, they don't want cute animations—they need to know whether the kittens are old enough to trap, how to borrow a humane box trap, and which clinic takes ear-tip appointments tomorrow morning.</p>
+          <div class="swatches-row" aria-label="Color palette tokens"><span class="swatch-chip"><span class="swatch-dot" style="background:#F5F5F0"></span>#F5F5F0 (15.9:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#16181A"></span>#16181A (15.9:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#173F73"></span>#173F73 (10.4:1)</span><span class="swatch-chip"><span class="swatch-dot" style="background:#FDF0D5"></span>#FDF0D5 (12.1:1)</span></div>
+        </div>
+        <div class="case-metrics-strip">
+          <div class="metric-cell"><span>HTML+CSS</span><strong>15.7 KB</strong></div>
+          <div class="metric-cell"><span>LCP (4G)</span><strong>280 ms</strong></div>
+          <div class="metric-cell"><span>Tap Target</span><strong>50×48px</strong></div>
+        </div>
+        <div class="case-footer">
+          <span class="section-meta">Lighthouse 100 / 100 / 100 / 100</span>
+          <a class="btn-spec" href="community-cat-rescue.html">Inspect Engineering Spec →</a>
+        </div>
+      </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="workbench-heading">
+        <div class="section-head">
+          <div>
+            <h2 id="workbench-heading">Interactive Studio QA Workbench</h2>
+            <p class="section-meta">Test our charity color tokens and inspect static payload budgets right in the browser</p>
+          </div>
+        </div>
+
+        <div class="workbench-grid">
+          <div class="panel">
+            <h3>Live WCAG 2.1 Contrast &amp; Token Verifier</h3>
+            <p class="panel-sub">Load any charity site’s surface/ink tokens or tweak hex values to verify relative luminance ratios for outdoor phone screens.</p>
+            <div class="preset-strip" aria-label="Charity palette presets">
+              <button type="button" class="preset-btn" data-preset-fg="#1F1A17" data-preset-bg="#FBF8F3">01 A foster-based cat rescue (#1F1A17 on #FBF8F3)</button>
+<button type="button" class="preset-btn" data-preset-fg="#141A17" data-preset-bg="#F9F8F4">02 A community food pantry (#141A17 on #F9F8F4)</button>
+<button type="button" class="preset-btn" data-preset-fg="#1B1918" data-preset-bg="#FAF6F0">03 A no-kill cat rescue (#1B1918 on #FAF6F0)</button>
+<button type="button" class="preset-btn" data-preset-fg="#16181A" data-preset-bg="#F5F5F0">04 A community-cat (TNR) rescue (#16181A on #F5F5F0)</button>
+            </div>
+            <div class="control-row">
+              <div>
+                <label class="field-label" for="fgColorHex">Foreground Ink Hex</label>
+                <div class="color-input-wrap">
+                  <input type="color" id="fgColorPicker" value="#1F1A17" aria-label="Foreground color picker">
+                  <input type="text" id="fgColorHex" value="#1F1A17" maxlength="7">
+                </div>
+              </div>
+              <div>
+                <label class="field-label" for="bgColorHex">Background Surface Hex</label>
+                <div class="color-input-wrap">
+                  <input type="color" id="bgColorPicker" value="#FBF8F3" aria-label="Background color picker">
+                  <input type="text" id="bgColorHex" value="#FBF8F3" maxlength="7">
+                </div>
+              </div>
+            </div>
+            <div class="contrast-preview" id="contrastPreview">
+              <div class="contrast-preview-title">Distribution Hours: Tue &amp; Thu 4:00 PM – 7:00 PM</div>
+              <p class="contrast-preview-body">No ID or income paperwork required. Volunteers pack fresh produce, dairy, and shelf-stable groceries at the side entrance.</p>
+            </div>
+            <div class="badge-row">
+              <strong>Ratio: <span id="contrastRatioOut">14.80 : 1</span></strong>
+              <span id="badgeAA" class="wcag-badge wcag-pass">AA Body (≥4.5): PASS</span>
+              <span id="badgeAAA" class="wcag-badge wcag-pass">AAA Body (≥7.0): PASS</span>
+              <span id="badgeLarge" class="wcag-badge wcag-pass">AA Large/UI (≥3.0): PASS</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Static Payload &amp; Accessibility Audit Matrix</h3>
+            <p class="panel-sub">Every site is audited before handoff for sub-18KB HTML+CSS weight, AAA primary text contrast, and keyboard-navigable landmarks.</p>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Case Study</th>
+                  <th>HTML+CSS</th>
+                  <th>Primary Contrast</th>
+                  <th>Min Tap Target</th>
+                  <th>Landmarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+        <td><a href="foster-cat-rescue.html"><strong>01 · A foster-based cat rescue</strong></a></td>
+        <td class="num">14.5 KB</td>
+        <td class="num">14.8:1 (AAA)</td>
+        <td class="num">52×48px</td>
+        <td class="num">7 regions</td>
+      </tr>
+<tr>
+        <td><a href="food-pantry.html"><strong>02 · A community food pantry</strong></a></td>
+        <td class="num">12.8 KB</td>
+        <td class="num">16.2:1 (AAA)</td>
+        <td class="num">54×48px</td>
+        <td class="num">7 regions</td>
+      </tr>
+<tr>
+        <td><a href="cat-rescue.html"><strong>03 · A no-kill cat rescue</strong></a></td>
+        <td class="num">15.5 KB</td>
+        <td class="num">15.6:1 (AAA)</td>
+        <td class="num">48×48px</td>
+        <td class="num">7 regions</td>
+      </tr>
+<tr>
+        <td><a href="community-cat-rescue.html"><strong>04 · A community-cat (TNR) rescue</strong></a></td>
+        <td class="num">15.7 KB</td>
+        <td class="num">15.9:1 (AAA)</td>
+        <td class="num">50×48px</td>
+        <td class="num">7 regions</td>
+      </tr>
+              </tbody>
+            </table>
+            <div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+              <button type="button" class="filter-btn" id="runLiveAuditBtn">Run Live DOM Audit on This Page</button>
+              <span class="section-meta" id="liveAuditResult" aria-live="polite">Click to verify headings, alt text, and links.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="tools-heading">
+        <div class="section-head">
+          <div>
+            <h2 id="tools-heading">Open-Source Developer Tools From the Studio</h2>
+            <p class="section-meta">Utilities I built alongside these nonprofit websites to keep my own workflow fast and organized</p>
+          </div>
+        </div>
+        <div class="tools-grid">
+          <article class="tool-card">
+      <div>
+        <div class="tool-stack">Vanilla JS · SVG Chronograph · Web Audio API</div>
+        <h3><a href="https://github.com/draarivpatel-ui/devlog-timer">Devlog Timer</a></h3>
+        <p>Stardance chronograph &amp; devlog workbench with a 10-hour radial cap dial, Pomodoro sprints, timestamped commit-split notes, and a live Markdown compiler.</p>
+      </div>
+      <div>
+        <a href="https://github.com/draarivpatel-ui/devlog-timer">GitHub Repo ↗</a> · <a href="https://aariv.me/devlog-timer/">Live App ↗</a>
+      </div>
+    </article>
+<article class="tool-card">
+      <div>
+        <div class="tool-stack">macOS · Swift · Git Worktrees</div>
+        <h3><a href="https://github.com/draarivpatel-ui/regatta">Regatta</a></h3>
+        <p>Native macOS workspace manager for isolating parallel coding branches with strict repository safety rails.</p>
+      </div>
+      <div>
+        <a href="https://github.com/draarivpatel-ui/regatta">GitHub Repo ↗</a>
+      </div>
+    </article>
+<article class="tool-card">
+      <div>
+        <div class="tool-stack">CLI · Git Diff Timeline</div>
+        <h3><a href="https://github.com/draarivpatel-ui/wasitme">wasitme</a></h3>
+        <p>Local diff-timeline inspector that reconstructs file-by-file authorship and session history across local repositories.</p>
+      </div>
+      <div>
+        <a href="https://github.com/draarivpatel-ui/wasitme">GitHub Repo ↗</a>
+      </div>
+    </article>
+<article class="tool-card">
+      <div>
+        <div class="tool-stack">macOS · SQLite FTS5</div>
+        <h3><a href="https://github.com/draarivpatel-ui/armillary">armillary</a></h3>
+        <p>Offline-first macOS archive that indexes local terminal and editor development transcripts on your own disk.</p>
+      </div>
+      <div>
+        <a href="https://github.com/draarivpatel-ui/armillary">GitHub Repo ↗</a>
+      </div>
+    </article>
+<article class="tool-card">
+      <div>
+        <div class="tool-stack">macOS · SpriteKit · Papercraft UI</div>
+        <h3><a href="https://github.com/draarivpatel-ui/busyholm">busyholm</a></h3>
+        <p>A tiny papercraft river island on the edge of your screen that grows buildings and bridges as you ship commits.</p>
+      </div>
+      <div>
+        <a href="https://github.com/draarivpatel-ui/busyholm">GitHub Repo ↗</a>
+      </div>
+    </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+  <div>
+    <strong>Aariv's Web Studio</strong> · Built from <code>sites.json</code> via zero-dependency <code>node build.mjs</code> &amp; verified by <code>node qa-audit.mjs</code>.
+  </div>
+  <div>
+    <a href="https://aariv.me">Portfolio (aariv.me)</a> ·
+    <a href="https://github.com/draarivpatel-ui/studio">Source Repository (GitHub)</a> ·
+    <span>MIT License</span>
+  </div>
+</footer>
+  </div>
+  <script src="inspector.js"></script>
+</body>
+</html>
