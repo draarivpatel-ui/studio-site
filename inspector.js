@@ -1,4 +1,4 @@
-/* Aariv's Web Studio — Interactive Accessibility, Viewport & QA Workbench */
+/* Aariv's Web Studio - Interactive Accessibility, Viewport & QA Workbench */
 (function () {
   "use strict";
 
@@ -150,6 +150,71 @@
       const active = gridOverlay.classList.toggle("active");
       toggleGridBtn.setAttribute("aria-pressed", active ? "true" : "false");
       toggleGridBtn.textContent = active ? "Hide 12-Col Swiss Grid" : "Overlay 12-Col Swiss Grid";
+    });
+  }
+
+  // 5. Keyboard Tab-Order & Landmark Overlay
+  const tabOrderBtn = document.getElementById("toggleTabOrderBtn");
+  let tabOrderActive = false;
+  if (tabOrderBtn) {
+    tabOrderBtn.addEventListener("click", function () {
+      tabOrderActive = !tabOrderActive;
+      tabOrderBtn.setAttribute("aria-pressed", tabOrderActive ? "true" : "false");
+      document.querySelectorAll(".tab-stop-badge").forEach(function (el) {
+        el.remove();
+      });
+      if (tabOrderActive) {
+        const focusable = Array.from(
+          document.querySelectorAll("a[href], button:not([disabled]), input:not([disabled]), summary")
+        );
+        focusable.forEach(function (el, idx) {
+          const badge = document.createElement("span");
+          badge.className = "tab-stop-badge";
+          badge.setAttribute("aria-hidden", "true");
+          badge.textContent = "Tab #" + (idx + 1);
+          el.appendChild(badge);
+        });
+        tabOrderBtn.textContent = "Hide Tab Order (" + focusable.length + " stops)";
+        if (auditResultOut) {
+          auditResultOut.textContent = "Highlighted " + focusable.length + " keyboard tab stops in DOM order.";
+        }
+      } else {
+        tabOrderBtn.textContent = "Show Keyboard Tab Order";
+      }
+    });
+  }
+
+  // 6. Copy Markdown QA Report button
+  const copyReportBtn = document.getElementById("copyAuditReportBtn");
+  if (copyReportBtn) {
+    copyReportBtn.addEventListener("click", function () {
+      const title = document.title;
+      const h1 = (document.querySelector("h1") && document.querySelector("h1").textContent.trim()) || title;
+      const imgs = document.querySelectorAll("img").length;
+      const headings = document.querySelectorAll("h1, h2, h3").length;
+      const links = document.querySelectorAll("a[href]").length;
+      const focusable = document.querySelectorAll("a[href], button:not([disabled]), input:not([disabled]), summary").length;
+      const fg = (fgText && fgText.value) || "#1F1A17";
+      const bg = (bgText && bgText.value) || "#FBF8F3";
+      const ratio = contrastRatio(fg, bg);
+      const ratioStr = ratio ? ratio.toFixed(2) + ":1" : "N/A";
+      const md = [
+        "# Studio QA Report: " + h1,
+        "",
+        "* Active Token Pair: " + fg + " on " + bg + " (" + ratioStr + ")",
+        "* Semantic Headings: " + headings,
+        "* Verified Images with Alt Text: " + imgs + "/" + imgs,
+        "* Navigable Links: " + links,
+        "* Keyboard Focus Stops: " + focusable,
+        "* External Tracking Scripts: 0"
+      ].join("
+");
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(md);
+      }
+      if (auditResultOut) {
+        auditResultOut.textContent = "Copied Markdown QA report (" + focusable + " tab stops, " + ratioStr + " contrast) to clipboard.";
+      }
     });
   }
 

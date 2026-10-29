@@ -1,4 +1,4 @@
-/* Aariv's Web Studio — Tactile Swiss Editorial & Accessibility Workbench */
+/* Aariv's Web Studio - Tactile Swiss Editorial & Accessibility Workbench */
 :root {
   --bg: #f6f3ec;
   --surface: #fffdf9;
@@ -517,6 +517,18 @@ a:hover, a:focus-visible {
   background: var(--good-bg);
   color: var(--good);
   border-color: var(--good);
+}
+.tab-stop-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  background: #1F1A17;
+  color: #FBF8F3;
+  border-radius: 3px;
+  vertical-align: middle;
 }
 .wcag-fail {
   background: #fde8e8;

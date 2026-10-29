@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>A no-kill cat rescue — Case Study 03 · Aariv's Web Studio</title>
+  <title>A no-kill cat rescue - Case Study 03 · Aariv's Web Studio</title>
   <meta name="description" content="No-kill rescues take in senior, diabetic, and injured cats that municipal shelters can't treat, which means vet bills are their biggest bottleneck. I designed this site around big, honest portrait photography and a persistent, transparent medical-fund donation path.">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,7 +12,7 @@
     <a class="skip-link" href="#content">Skip to main content</a>
 <header class="masthead" role="banner">
   <a class="brand" href="index.html">
-    <span class="brand-mark">STUDIO // 01–04</span>
+    <span class="brand-mark">STUDIO // 01-04</span>
     <span class="brand-name">Aariv's Web Studio</span>
   </a>
   <nav class="masthead-nav" aria-label="Primary">
@@ -63,7 +63,7 @@
             <button type="button" class="vp-tab" role="tab" aria-selected="false" data-vp-mode="tablet" data-vp-width="768px" data-vp-spec="2-column featured senior cats + 4-column impact tier strip (768px).">Tablet (768px)</button>
             <button type="button" class="vp-tab" role="tab" aria-selected="false" data-vp-mode="mobile" data-vp-width="420px" data-vp-spec="1-column portrait cards (375px), 2×2 donation impact tier grid, persistent top donate button.">Mobile Preview (375px)</button>
           </div>
-          <button type="button" class="preset-btn" id="toggleGridBtn" aria-pressed="false">Overlay 12-Col Swiss Grid</button>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;"><button type="button" class="preset-btn" id="toggleGridBtn" aria-pressed="false">Overlay 12-Col Swiss Grid</button><button type="button" class="preset-btn" id="toggleTabOrderBtn" aria-pressed="false">Show Keyboard Tab Order</button><button type="button" class="preset-btn" id="copyAuditReportBtn">Copy QA Report (.md)</button></div>
         </div>
         <div class="showcase-stage" id="showcaseStage">
           <img src="screenshots/cat-rescue.png" alt="Full interface screenshot of A no-kill cat rescue showing typography hierarchy and primary call to action" width="1200" height="750">
@@ -219,7 +219,7 @@
           <div class="note-card" style="margin-top:14px;">
             <h2 style="font-size:17px;">Accessibility &amp; QA Checks</h2>
             <ul>
-              <li>Every donation amount card exposes its full description to screen readers ('Donate $50 — covers initial bloodwork and FIV/FeLV test for one intake').</li>
+              <li>Every donation amount card exposes its full description to screen readers ('Donate $50 - covers initial bloodwork and FIV/FeLV test for one intake').</li>
 <li>No auto-playing carousels or background video: all cat spotlights sit in a keyboard-focusable static grid.</li>
 <li>Tested with macOS VoiceOver and Safari Reader mode to ensure every cat's age, spay/neuter status, and adoption fee reads in logical DOM order.</li>
             </ul>
