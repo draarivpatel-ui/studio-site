@@ -207,8 +207,7 @@
         "* Navigable Links: " + links,
         "* Keyboard Focus Stops: " + focusable,
         "* External Tracking Scripts: 0"
-      ].join("
-");
+      ].join("\n");
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(md);
       }
